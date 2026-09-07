@@ -1,15 +1,6 @@
 ﻿using DatabaseLibrary;
-using System;
-using System.Collections.Generic;
-using System.Text;
+using DatabaseLibrary.Models;
 using System.Windows;
-using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Shapes;
 
 namespace UsersApp
 {
@@ -25,7 +16,25 @@ namespace UsersApp
 
         private void RegistrationButton_Click(object sender, RoutedEventArgs e)
         {
+            var login = LoginTextBox.Text;
+            var password = UserPasswordBox.Password;
+            var phone = PhoneTextBox.Text;
+            var email = EmailTextBox.Text;
 
+            if (string.IsNullOrWhiteSpace(login) || string.IsNullOrWhiteSpace(password) || string.IsNullOrWhiteSpace(phone) || string.IsNullOrWhiteSpace(email))
+                return;
+
+            var user = new User() { Email = email, Password = password, Phone = phone, Login = login };
+
+            try
+            {
+                UserService.AddNewUser(user);
+                Close();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message, "Ошибка", MessageBoxButton.OK, MessageBoxImage.Error);
+            }
         }
     }
 }

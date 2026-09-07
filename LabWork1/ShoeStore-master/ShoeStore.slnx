@@ -1,6 +1,0 @@
-<Solution>
-  <Project Path="DatabaseLibrary/DatabaseLibrary.csproj" />
-  <Project Path="ShoeStoreApi/ShoeStoreApi.csproj" />
-  <Project Path="ShoeStoreApp/ShoeStoreApp.csproj" />
-  <Project Path="ShoeStoreWebApp/ShoeStoreWebApp.csproj" />
-</Solution>

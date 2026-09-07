@@ -8,8 +8,8 @@
         Title="Пользователи" Height="450" Width="800" Loaded="Window_Loaded">
     <DockPanel LastChildFill="True">
         <StackPanel DockPanel.Dock="Top" Orientation="Horizontal">
-            <Button Content="Импорт" Name="ExportButton" Click="ExportButton_Click"/>
-            <Button Content="Экспорт" Name="ImportButton" Click="ImportButton_Click"/>
+            <Button Content="Экспорт" Name="ExportButton" Click="ExportButton_Click"/>
+            <Button Content="Импорт" Name="ImportButton" Click="ImportButton_Click"/>
         </StackPanel>
         <DataGrid Name="UsersDataGrid">
             

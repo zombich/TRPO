@@ -1,4 +1,5 @@
 <Solution>
   <Project Path="DatabaseLibrary/UsersLibrary.csproj" />
   <Project Path="UsersApp/UsersApp.csproj" />
+  <Project Path="UsersAppUnitTests/UsersAppUnitTests.csproj" Id="af102cd2-1f41-408e-adf0-716b052ba04c" />
 </Solution>

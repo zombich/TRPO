@@ -6,10 +6,10 @@ namespace DatabaseLibrary.Models
 {
     public class User
     {
-        public string? Login;
-        public string? Password;
-        public string? Phone;
-        public string? Email;
+        public string? Login { get; set; }
+        public string? Password { get; set; }
+        public string? Phone { get; set; }
+        public string? Email { get; set; }
 
     }
 }
