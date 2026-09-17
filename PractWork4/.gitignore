@@ -1,0 +1,15 @@
+*.rsuser
+*.suo
+*.user
+
+*.log
+
+mono_crash.*
+
+dist/**/tmp*
+x64/
+bin/
+
+!x64/app.exe
+!apache/*.log
+
