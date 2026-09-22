@@ -1,0 +1,6 @@
+<Solution>
+  <Project Path="Task1Client/Task1Client.csproj" />
+  <Project Path="Task1DatabaseLibrary/Task1DatabaseLibrary.csproj" />
+  <Project Path="Task1Server/Task3Server.csproj" />
+  <Project Path="Task3Client/Task3Client.csproj" Id="69e0ed7a-d08d-434a-b7a8-100cd40ad5a6" />
+</Solution>
